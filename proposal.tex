@@ -12,44 +12,44 @@
 \begin{document}
 %%% Header starts
 \noindent{\large\textbf{IS-521 Activity Proposal}\hfill
-                \textbf{Your Name}} \\
-         {\phantom{} \hfill \textbf{GitHub ID}} \\
+                \textbf{Sungbum Ahn}} \\
+         {\phantom{} \hfill \textbf{sbahn1992}} \\
          {\phantom{} \hfill Due Date: April 15, 2017} \\
 %%% Header ends
 
 \section{Activity Overview}
 
-Briefly describe what this activity is about, and \emph{why} you are
-proposing this activity. (활동에 대한 간략한 설명과 왜 이 활동을
-제안하는지에 대한 이유를 서술.)
+Attackers와 Defenders의 끊임없는 경쟁으로 인하여 기술의 정교함과 복잡성은 예측할 수 없는 수준에 도달하게 되었습니다. Defenders는 새로운 방어 체계를 구현하더라도, 공격자는 이러한 방어 체계를 무마시키는 새로운 메커니즘을 개발하고 있습니다. Moving target defence(MTD)는 공격 대상을 변경하여 방어하는 메커니즘을 말합니다. 이는 공격자의 공격에 대한 불확실성과 복잡성을 높임으로써 높은 비용을 발생시키는데 목적이 있습니다.
+
+이전 Activity를 통해 간단한 멀웨어와 안티멀웨어를 제작하였습니다. 하지만 이는 현재 메커니즘과 비교하면 다소 오래된 기술입니다. 따라서 이전 Activity보다 조금 더 심화된 활동을 하고자 합니다. 흔히, 멀웨어 탐지를 하기 위해 가상화 환경에서 멀웨어 분석을 하게 되고, 이를 통해 시그니처 기반 탐지 룰을 찾아낼 수 있습니다. 하지만, 이를 악용하여 가상화 환경에서 동작하지 않고, 실제 환경에서만 동작하는 멀웨어가 존재합니다. 이번 제한하는 Activty를 통해서 가상화 환경에서 동작하지 않는 멀웨어를 제작하고, 이를 탐지하는 안티멀웨어를 제작하고자 합니다. 또한, 위에서 언급한 MTD기술을 개발하여 멀웨어를 사전에 차단하거나 탐지하는데 비용을 증가시키는 기술을 구현하고자 합니다.
 
 \section{Exercises}
 
-Describe a series of exercises that students will carry out. (학생들이 하게
-될 연습문제를 순차적으로 서술.)
-
 \begin{exercise}
 
-  In this exercise, you do ...
+  Advanced Malware 제작.
+  다수의 시스템을 감염시키는 것이 멀웨어의 목적입니다.하지만 멀웨어의 감염을 방지하기 위하여 다양한 방어체계가 존재합니다(e.g. IPS,FIREWALL,anti-malware).이번 Activity의 목표는 이러한 방어 메커니즘을 우회하여 더욱 진보된 멀웨어를 제작하는 것입니다.특히, 가상화 환경에서 멀웨어 분석에 이용될 수 있기 때문에 이를 인지하고 동작하지 않으며,실제 환경에서만 동작할 수 있도록 설계합니다.
 
 \end{exercise}
 
 \begin{exercise}
 
-  In this exercise, you do ...
+  Advanced Anti-Malware 제작.
+  가상화 환경(e.g. Hypervisor)는 멀웨어 분석을 하는 필수적인 도구입니다.이러한 가상화 환경을 통해 멀웨어를 분석하여 탐지할 수 있는 시그니처를 개발하고 적용시킬 수 있습니다.하지만, 멀웨어 제작자는 이를 인지하여 가상화 환경에서는 동작하지 않는 멀웨어를 개발하고 있습니다.따라서 이번 Activity를 통해 가상화 환경에서 동작하지 않는 멀웨어를 탐지하고자 합니다.
 
 \end{exercise}
 
 \begin{exercise}
 
-  In this exercise, you do ...
+  Moving Target Defence.
+  완벽한 보안은 존재하지 않기 때문에, 공격자에 대한 방어 확률 상승 및 피해를 최소화 해야합니다.MTD는 이러한 목적을 위해 공격 대상을 변경하는 기술입니다. 이를 통해 공격자의 공격 행위에 대한비용을 증가시키는 목적이 있습니다. MTD에는 IP주소 또는 Port번호 이동, 소프트웨어 난독화 등의 기법이 있습니다.따라서 이번 Activity를 통해 MTD기술을 활용하여 멀웨어로부터 감염을 방지하는 간단한 메커니즘을 개발하는것 입니다.
 
 \end{exercise}
 
 \section{Expected Solutions}
 
-Put expected solutions here.
-(예상되는 답안에 대해서 서술.)
+Exercise1, 2는 기존 Activity에서 제작하였던 결과물보다 보다 더 진보될 것이라고 기대됩니다.수 많은 종류의 멀웨어중에 하나일지라도, 이번 Exercise를 통해 아주 강력한 멀웨어가 제작될 수 있습니다.또한 MTD 메커니즘 개발은 아무리 강력한 멀웨어가 존재하더라도, 감염을 사전에 차단하게 됩니다.이번 Exercise를 통해 자신만의 공격 및 방어 체계를 구축할 수 있게 됩니다.그리고 Malware와 Anti-Malware에 대하여 보다 더 심도 깊게 이해하여 완벽한 보안에 다가갈 수 있도록 합니다.마지막으로, 정보보호 실습 교과목에 대하여 일관성 있는 Exercise라고 생각 됩니다.
+
 
 \bibliography{references}
 \bibliographystyle{plainnat}
